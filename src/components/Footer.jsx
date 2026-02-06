@@ -46,6 +46,11 @@ const Footer = ({ language }) => {
                 </Link>
               </li>
               <li>
+                <Link to="/faq" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition">
+                  {language === 'en' ? 'FAQ' : 'عمومی سوالات'}
+                </Link>
+              </li>
+              <li>
                 <Link to="/contact" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition">
                   {language === 'en' ? 'Contact' : 'رابطہ کریں'}
                 </Link>

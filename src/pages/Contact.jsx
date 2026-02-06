@@ -2,8 +2,12 @@ import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Send, MessageSquare, Clock, Loader2 } from 'lucide-react';
 import toast from 'react-hot-toast';
 import emailjs from '@emailjs/browser';
+import { useNavigate } from "react-router-dom";
 
 const Contact = ({ language }) => {
+
+  const navigate = useNavigate(); 
+  
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -316,7 +320,9 @@ const Contact = ({ language }) => {
                 : 'فوری جوابات تلاش کر رہے ہیں؟ ہمارے کیلکولیٹرز اور خدمات کے بارے میں عام سوالات کے لیے ہمارا FAQ سیکشن دیکھیں۔'
               }
             </p>
-            <button className="text-indigo-600 dark:text-indigo-400 font-semibold hover:underline">
+            <button
+            onClick={() => navigate("/faq")}
+            className="text-indigo-600 dark:text-indigo-400 font-semibold hover:underline">
               {language === 'en' ? 'View FAQ →' : 'FAQ دیکھیں ←'}
             </button>
           </div>

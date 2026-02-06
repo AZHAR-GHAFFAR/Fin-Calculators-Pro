@@ -9,6 +9,7 @@ import AboutUs from './pages/AboutUs';
 import Contact from './pages/Contact';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
+import FAQ from './pages/FAQ';
 import modulesData from './data/modulesData';
 import { Toaster } from 'react-hot-toast';
 import ScrollToTop from './components/ScrollToTop';
@@ -115,6 +116,10 @@ return (
               <Route 
                 path="/terms" 
                 element={<TermsOfService language={language} />} 
+              />
+              <Route 
+                path="/faq" 
+                element={<FAQ language={language} />} 
               />
             </Routes>
           </main>
