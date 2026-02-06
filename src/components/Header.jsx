@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Calculator, Moon, Sun, Globe, Menu, X } from 'lucide-react';
@@ -48,10 +49,16 @@ const Header = ({ language, setLanguage, darkMode, setDarkMode }) => {
             </button>
 
             {/* Auth Buttons */}
-            <button className="px-4 py-2 text-sm font-semibold text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-lg transition-all duration-200">
-              {language === 'en' ? 'Sign In' : 'سائن ان'}
+            <button 
+              onClick={() => navigate('/contact')}
+              className="px-4 py-2 text-sm font-semibold text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-lg transition-all duration-200"
+            >
+              {language === 'en' ? 'Contact Us' : 'رابطہ کریں'}
             </button>
-            <button className="px-4 py-2 text-sm font-semibold text-white bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 rounded-lg shadow-md transition-all duration-200">
+            <button 
+              onClick={() => navigate('/module/financial')}
+              className="px-4 py-2 text-sm font-semibold text-white bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 transform hover:-translate-y-0.5"
+            >
               {language === 'en' ? 'Get Started' : 'شروع کریں'}
             </button>
           </div>
@@ -90,11 +97,23 @@ const Header = ({ language, setLanguage, darkMode, setDarkMode }) => {
               {darkMode ? (language === 'en' ? 'Light Mode' : 'لائٹ موڈ') : (language === 'en' ? 'Dark Mode' : 'ڈارک موڈ')}
             </button>
 
-            <button className="w-full px-4 py-2 text-sm font-semibold text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-lg transition-all duration-200 text-left">
-              {language === 'en' ? 'Sign In' : 'سائن ان'}
+            <button 
+              onClick={() => {
+                navigate('/contact');
+                setMobileMenuOpen(false);
+              }}
+              className="w-full px-4 py-2 text-sm font-semibold text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-lg transition-all duration-200 text-left"
+            >
+              {language === 'en' ? 'Contact Us' : 'رابطہ کریں'}
             </button>
             
-            <button className="w-full px-4 py-2 text-sm font-semibold text-white bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 rounded-lg shadow-md transition-all duration-200">
+            <button 
+              onClick={() => {
+                navigate('/module/financial');
+                setMobileMenuOpen(false);
+              }}
+              className="w-full px-4 py-2 text-sm font-semibold text-white bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 rounded-lg shadow-md transition-all duration-200"
+            >
               {language === 'en' ? 'Get Started' : 'شروع کریں'}
             </button>
           </div>

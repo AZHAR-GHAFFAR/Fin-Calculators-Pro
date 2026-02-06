@@ -11,6 +11,8 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import modulesData from './data/modulesData';
 import { Toaster } from 'react-hot-toast';
+import ScrollToTop from './components/ScrollToTop';
+
 
 function App() {
   const [language, setLanguage] = useState('en'); // 'en' or 'ur'
@@ -53,6 +55,8 @@ function App() {
 
 return (
     <Router>
+    <ScrollToTop />
+
       <div className={darkMode ? 'dark' : ''}>
         <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 transition-colors duration-300">
           <Toaster position="top-right" />
