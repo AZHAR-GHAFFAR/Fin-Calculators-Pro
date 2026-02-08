@@ -3,16 +3,20 @@ import React, { useRef, useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { TrendingUp, FileText, DollarSign, Calculator, ChevronRight, History, Sparkles, ArrowDown, X, Cookie, Shield, Bell, Check, Lock, Zap, Users, Award, Globe } from 'lucide-react';
 import DemoVideo from '../assests/FinCalc Pro.mp4';
+import WriteReviewModal from '../components/WriteReviewModal'; 
+
+
 
 const HomePage = ({ modules, language, calculationHistory }) => {
   const navigate = useNavigate();
   const calculatorsRef = useRef(null);
   const featuresRef = useRef(null);
-
+  
   const [showDemo, setShowDemo] = useState(false);
   const [showWelcomePopup, setShowWelcomePopup] = useState(false);
   const [showCookieConsent, setShowCookieConsent] = useState(false);
   const [welcomeAnimationComplete, setWelcomeAnimationComplete] = useState(false);
+  const [showReviewModal, setShowReviewModal] = useState(false); 
 
    // Check if user has already seen welcome popup and accepted cookies
   useEffect(() => {
@@ -822,8 +826,8 @@ will-change-transform cursor-pointer"
                 : 'اپنا تجربہ شیئر کرنا چاہتے ہیں؟'
               }
             </p>
-            <button
-              onClick={() => navigate('/contact')}
+           <button
+              onClick={() => setShowReviewModal(true)}
               className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -834,6 +838,13 @@ will-change-transform cursor-pointer"
           </div>
         </div>
       </div>
+
+      {/* Review Modal */}
+      <WriteReviewModal 
+        isOpen={showReviewModal} 
+        onClose={() => setShowReviewModal(false)} 
+        language={language} 
+      />
 
       {/* Features */}
       <div ref={featuresRef} className="bg-white dark:bg-slate-800 dark:from-slate-800 dark:to-slate-900 rounded-3xl p-8 md:p-12 border border-slate-200 dark:border-slate-700 scroll-mt-20">
