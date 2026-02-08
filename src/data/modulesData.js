@@ -3,7 +3,7 @@ import {
   DollarSign, Users, FileText, Package, Home, Hammer, 
   GraduationCap, HeartPulse, ShoppingCart, Sprout, Zap, 
   Car, Scale, Megaphone, Factory, Sun, BarChart3, Clock,
-  Beaker, Gamepad2, Wallet, Landmark, Gift, Globe
+  Beaker, Gamepad2, Wallet, Landmark, Gift, Globe, TrendingDown
 } from 'lucide-react';
 
 export const modulesData = [
@@ -14,7 +14,8 @@ export const modulesData = [
     icon: Calculator,
     color: '#FF6B6B',
     gradient: 'from-red-500 to-pink-500',
-    description: 'Loans, investments, savings, and tax calculators',
+    description: 'Complete financial planning tools including loan EMI, mortgage, investment SIP, retirement savings, tax planning, and profit/loss analysis for smart money management',
+    descriptionUrdu: 'مکمل مالیاتی منصوبہ بندی کے ٹولز بشمول قرض کی قسطیں، رہن، سرمایہ کاری SIP، ریٹائرمنٹ بچت، ٹیکس پلاننگ، اور منافع/نقصان کا تجزیہ سمارٹ پیسے کے انتظام کے لیے',
     calculators: [
       { id: 'loan', name: 'Loan Calculator', nameUrdu: 'قرض کیلکولیٹر', icon: Calculator },
       { id: 'mortgage', name: 'Mortgage Calculator', nameUrdu: 'رہن کیلکولیٹر', icon: Home },
@@ -33,7 +34,8 @@ export const modulesData = [
     icon: Building2,
     color: '#4ECDC4',
     gradient: 'from-cyan-500 to-teal-500',
-    description: 'ROI, revenue, margins, and business metrics',
+    description: 'Essential business tools for ROI analysis, revenue forecasting, profit margins, salary calculations, business valuation, cash flow management, and pricing strategies',
+    descriptionUrdu: 'ضروری کاروباری ٹولز برائے ROI تجزیہ، آمدنی کی پیشن گوئی، منافع کے مارجن، تنخواہ کے حساب، کاروبار کی قدر، کیش فلو انتظام، اور قیمتوں کی حکمت عملی',
     calculators: [
       { id: 'roi', name: 'ROI Calculator', nameUrdu: 'آر او آئی کیلکولیٹر', icon: TrendingUp },
       { id: 'revenue', name: 'Revenue Projections', nameUrdu: 'آمدنی کی پیشن گوئی', icon: BarChart3 },
@@ -52,7 +54,8 @@ export const modulesData = [
     icon: Shield,
     color: '#95E1D3',
     gradient: 'from-emerald-400 to-cyan-400',
-    description: 'Life, health, vehicle, and term insurance',
+    description: 'Comprehensive insurance planning for life, health, term, vehicle coverage, and claim calculations to protect you and your family financially',
+    descriptionUrdu: 'جامع انشورنس پلاننگ برائے زندگی، صحت، مدتی، گاڑی کی کوریج، اور دعوے کے حساب کتاب آپ اور آپ کے خاندان کو مالی طور پر محفوظ رکھنے کے لیے',
     calculators: [
       { id: 'life', name: 'Life Insurance', nameUrdu: 'لائف انشورنس', icon: Shield },
       { id: 'health', name: 'Health Insurance', nameUrdu: 'ہیلتھ انشورنس', icon: HeartPulse },
@@ -68,7 +71,8 @@ export const modulesData = [
     icon: Calendar,
     color: '#F38181',
     gradient: 'from-rose-500 to-orange-500',
-    description: 'EMI, installments, and payment schedules',
+    description: 'Smart payment planning with EMI calculators, installment schedules, amortization tables, late fee calculations for better debt management',
+    descriptionUrdu: 'سمارٹ ادائیگی کی منصوبہ بندی EMI کیلکولیٹرز، قسطوں کے شیڈول، ایمورٹائزیشن ٹیبلز، لیٹ فیس کے حساب کے ساتھ بہتر قرض کے انتظام کے لیے',
     calculators: [
       { id: 'emi', name: 'EMI Calculator', nameUrdu: 'ای ایم آئی کیلکولیٹر', icon: Calendar },
       { id: 'installment', name: 'Installment Planner', nameUrdu: 'قسط پلانر', icon: Calendar },
@@ -84,7 +88,8 @@ export const modulesData = [
     icon: Ruler,
     color: '#FFD93D',
     gradient: 'from-yellow-400 to-amber-500',
-    description: 'Area conversion, construction, and measurements',
+    description: 'Convert land areas between Marla, Kanal, Acre, and square feet. Calculate construction costs, paint, tiles, and room dimensions accurately',
+    descriptionUrdu: 'مرلہ، کنال، ایکڑ، اور مربع فٹ کے درمیان زمین کے رقبے تبدیل کریں۔ تعمیراتی لاگت، پینٹ، ٹائلز، اور کمرے کی پیمائش درست طریقے سے کریں',
     calculators: [
       { id: 'area', name: 'Area Converter', nameUrdu: 'رقبہ تبدیل کار', icon: Ruler },
       { id: 'construction', name: 'Construction Cost', nameUrdu: 'تعمیراتی لاگت', icon: Hammer },
@@ -101,7 +106,8 @@ export const modulesData = [
     icon: TrendingUp,
     color: '#6BCF7F',
     gradient: 'from-green-500 to-emerald-500',
-    description: 'Business growth, sales forecast, and trends',
+    description: 'Forecast business growth, population trends, sales projections, year-over-year analysis, and market trend predictions for strategic planning',
+    descriptionUrdu: 'کاروباری ترقی، آبادی کے رجحانات، فروخت کی پیشن گوئیاں، سال بہ سال تجزیہ، اور مارکیٹ ٹرینڈ کی پیش گوئی حکمت عملی کی منصوبہ بندی کے لیے',
     calculators: [
       { id: 'business-growth', name: 'Business Growth', nameUrdu: 'کاروباری ترقی', icon: TrendingUp },
       { id: 'population', name: 'Population Growth', nameUrdu: 'آبادی میں اضافہ', icon: Users },
@@ -117,7 +123,8 @@ export const modulesData = [
     icon: Users,
     color: '#A8E6CF',
     gradient: 'from-green-400 to-teal-400',
-    description: 'Salary, overtime, PF, and employee benefits',
+    description: 'Complete HR solutions for salary breakdowns, overtime pay, provident fund, gratuity, leave encashment, bonuses, tax deductions, and attendance tracking',
+    descriptionUrdu: 'مکمل HR حل برائے تنخواہ کی تفصیل، اوور ٹائم تنخواہ، پراویڈنٹ فنڈ، گریچویٹی، چھٹیوں کی رقم، بونس، ٹیکس کٹوتی، اور حاضری کی نگرانی',
     calculators: [
       { id: 'salary-breakdown', name: 'Salary Breakdown', nameUrdu: 'تنخواہ کی تفصیل', icon: DollarSign },
       { id: 'overtime', name: 'Overtime Calculator', nameUrdu: 'اوور ٹائم کیلکولیٹر', icon: Clock },
@@ -138,7 +145,8 @@ export const modulesData = [
     icon: FileText,
     color: '#FFB6B9',
     gradient: 'from-pink-400 to-rose-400',
-    description: 'Balance sheet, P&L, depreciation, and ratios',
+    description: 'Professional accounting tools for balance sheets, P&L statements, depreciation, asset valuation, receivables, working capital, and financial ratios',
+    descriptionUrdu: 'پیشہ ورانہ اکاؤنٹنگ ٹولز برائے بیلنس شیٹ، P&L بیانات، قدر میں کمی، اثاثوں کی قدر، وصولیاں، ورکنگ کیپیٹل، اور مالیاتی تناسب',
     calculators: [
       { id: 'balance-sheet', name: 'Balance Sheet', nameUrdu: 'بیلنس شیٹ', icon: FileText },
       { id: 'profit-loss', name: 'Profit & Loss', nameUrdu: 'منافع اور نقصان', icon: TrendingUp },
@@ -159,7 +167,8 @@ export const modulesData = [
     icon: Package,
     color: '#C7CEEA',
     gradient: 'from-indigo-400 to-purple-400',
-    description: 'Stock valuation, EOQ, reorder points',
+    description: 'Manage inventory with tools for stock valuation, reorder points, turnover ratios, FIFO/LIFO methods, safety stock, and warehouse optimization',
+    descriptionUrdu: 'انوینٹری کا انتظام ٹولز کے ساتھ اسٹاک کی قدر، دوبارہ آرڈر پوائنٹس، ٹرن اوور تناسب، FIFO/LIFO طریقے، حفاظتی اسٹاک، اور گودام کی اصلاح کے لیے',
     calculators: [
       { id: 'stock-valuation', name: 'Stock Valuation', nameUrdu: 'اسٹاک ویلیویشن', icon: Package },
       { id: 'reorder', name: 'Reorder Point', nameUrdu: 'دوبارہ آرڈر پوائنٹ', icon: Package },
@@ -179,7 +188,8 @@ export const modulesData = [
     icon: Home,
     color: '#B4869F',
     gradient: 'from-purple-400 to-pink-400',
-    description: 'Property valuation, rental yield, taxes',
+    description: 'Property investment tools for rental yield, property valuation, ROI on properties, capital gains tax, and real estate market analysis',
+    descriptionUrdu: 'پراپرٹی سرمایہ کاری کے ٹولز برائے کرائے کی آمدنی، پراپرٹی کی قدر، پراپرٹیز پر ROI، کیپٹل گینز ٹیکس، اور رئیل اسٹیٹ مارکیٹ کا تجزیہ',
     calculators: [
       { id: 'property-valuation', name: 'Property Valuation', nameUrdu: 'پراپرٹی ویلیویشن', icon: Home },
       { id: 'rental-yield', name: 'Rental Yield', nameUrdu: 'کرایہ کی آمدنی', icon: DollarSign },
@@ -195,23 +205,24 @@ export const modulesData = [
   },
   {
     id: 'construction',
-    name: 'Construction & Engineering',
-    nameUrdu: 'تعمیرات اور انجینئرنگ',
+    name: 'Construction & Building',
+    nameUrdu: 'تعمیرات اور عمارت سازی',
     icon: Hammer,
-    color: '#E85D75',
-    gradient: 'from-red-400 to-pink-500',
-    description: 'Material estimation, labor, project costs',
+    color: '#F97316',
+    gradient: 'from-orange-600 to-red-600',
+    description: 'Construction cost estimators for cement, bricks, steel, sand, paint, tiles, labor costs, and complete building material calculations',
+    descriptionUrdu: 'تعمیراتی لاگت کا تخمینہ برائے سیمنٹ، اینٹیں، سٹیل، ریت، پینٹ، ٹائلز، مزدوری کی لاگت، اور مکمل تعمیراتی مواد کے حساب',
     calculators: [
-      { id: 'material-quantity', name: 'Material Quantity', nameUrdu: 'مواد کی مقدار', icon: Package },
+      { id: 'cement', name: 'Cement Calculator', nameUrdu: 'سیمنٹ کیلکولیٹر', icon: Hammer },
+      { id: 'brick', name: 'Brick Calculator', nameUrdu: 'اینٹ کیلکولیٹر', icon: Hammer },
+      { id: 'steel', name: 'Steel Calculator', nameUrdu: 'اسٹیل کیلکولیٹر', icon: Hammer },
+      { id: 'sand-gravel', name: 'Sand & Gravel', nameUrdu: 'ریت اور بجری', icon: Hammer },
+      { id: 'concrete', name: 'Concrete Volume', nameUrdu: 'کنکریٹ حجم', icon: Hammer },
+      { id: 'paint-area', name: 'Paint Area', nameUrdu: 'پینٹ کا رقبہ', icon: Ruler },
+      { id: 'tile-cost', name: 'Tile Cost', nameUrdu: 'ٹائل کی لاگت', icon: DollarSign },
       { id: 'labor-cost', name: 'Labor Cost', nameUrdu: 'مزدوری کی لاگت', icon: Users },
-      { id: 'project-timeline', name: 'Project Timeline', nameUrdu: 'منصوبے کا وقت', icon: Calendar },
-      { id: 'steel-reinforcement', name: 'Steel Reinforcement', nameUrdu: 'اسٹیل کی تقویت', icon: Hammer },
-      { id: 'concrete-mix', name: 'Concrete Mix', nameUrdu: 'کنکریٹ مکس', icon: Package },
-      { id: 'plumbing', name: 'Plumbing Calculator', nameUrdu: 'پلمبنگ کیلکولیٹر', icon: Ruler },
-      { id: 'electrical-load', name: 'Electrical Load', nameUrdu: 'برقی بوجھ', icon: Zap },
-      { id: 'hvac', name: 'HVAC Size', nameUrdu: 'ایچ وی اے سی سائز', icon: Ruler },
-      { id: 'roofing', name: 'Roofing Material', nameUrdu: 'چھت کا مواد', icon: Home },
-      { id: 'foundation', name: 'Foundation', nameUrdu: 'بنیاد', icon: Hammer }
+      { id: 'house-cost', name: 'House Construction Cost', nameUrdu: 'مکان کی تعمیراتی لاگت', icon: Home },
+      { id: 'material-quantity', name: 'Material Quantity', nameUrdu: 'مواد کی مقدار', icon: Package }
     ]
   },
   {
@@ -219,61 +230,63 @@ export const modulesData = [
     name: 'Education & Academic',
     nameUrdu: 'تعلیم اور تعلیمی',
     icon: GraduationCap,
-    color: '#8B5FBF',
-    gradient: 'from-purple-500 to-indigo-500',
-    description: 'GPA, CGPA, grades, and student loans',
+    color: '#8B5CF6',
+    gradient: 'from-purple-600 to-indigo-600',
+    description: 'Academic calculators for GPA, CGPA, grade conversions, percentage to GPA, student loan planning, and education cost estimations',
+    descriptionUrdu: 'تعلیمی کیلکولیٹرز برائے GPA، CGPA، گریڈ تبدیلیاں، فیصد سے GPA، طالب علم قرض کی منصوبہ بندی، اور تعلیمی لاگت کا تخمینہ',
     calculators: [
-      { id: 'gpa', name: 'GPA Calculator', nameUrdu: 'جی پی اے کیلکولیٹر', icon: GraduationCap },
-      { id: 'cgpa', name: 'CGPA to Percentage', nameUrdu: 'سی جی پی اے سے فیصد', icon: Calculator },
-      { id: 'grade', name: 'Grade Calculator', nameUrdu: 'گریڈ کیلکولیٹر', icon: FileText },
-      { id: 'attendance-percent', name: 'Attendance %', nameUrdu: 'حاضری فیصد', icon: Calendar },
-      { id: 'study-time', name: 'Study Time Planner', nameUrdu: 'مطالعہ کا وقت', icon: Clock },
-      { id: 'exam-predictor', name: 'Exam Marks Predictor', nameUrdu: 'امتحان کے نمبر', icon: TrendingUp },
-      { id: 'scholarship', name: 'Scholarship Eligibility', nameUrdu: 'اسکالرشپ کی اہلیت', icon: GraduationCap },
-      { id: 'fee-calculator', name: 'Fee Calculator', nameUrdu: 'فیس کیلکولیٹر', icon: DollarSign },
-      { id: 'student-loan', name: 'Student Loan', nameUrdu: 'طالب علم قرض', icon: Calculator }
+      { id: 'gpa', name: 'GPA Calculator', nameUrdu: 'GPA کیلکولیٹر', icon: GraduationCap },
+      { id: 'cgpa', name: 'CGPA Calculator', nameUrdu: 'CGPA کیلکولیٹر', icon: GraduationCap },
+      { id: 'percentage-to-gpa', name: 'Percentage to GPA', nameUrdu: 'فیصد سے GPA', icon: Calculator },
+      { id: 'grade-calculator', name: 'Grade Calculator', nameUrdu: 'گریڈ کیلکولیٹر', icon: FileText },
+      { id: 'final-grade', name: 'Final Grade', nameUrdu: 'حتمی گریڈ', icon: GraduationCap },
+      { id: 'student-loan', name: 'Student Loan', nameUrdu: 'طالب علم قرض', icon: DollarSign },
+      { id: 'education-savings', name: 'Education Savings', nameUrdu: 'تعلیمی بچت', icon: DollarSign },
+      { id: 'scholarship', name: 'Scholarship Calculator', nameUrdu: 'اسکالرشپ کیلکولیٹر', icon: Gift }
     ]
   },
   {
-    id: 'healthcare',
-    name: 'Healthcare & Medical',
-    nameUrdu: 'صحت اور طبی',
+    id: 'health-fitness',
+    name: 'Health & Fitness',
+    nameUrdu: 'صحت اور تندرستی',
     icon: HeartPulse,
-    color: '#FF6F91',
-    gradient: 'from-pink-500 to-rose-500',
-    description: 'BMI, calories, medicine dosage, pregnancy',
+    color: '#EF4444',
+    gradient: 'from-red-500 to-pink-500',
+    description: 'Health calculators for BMI, BMR, calorie needs, body fat percentage, ideal weight, water intake, pregnancy due dates, and fitness tracking',
+    descriptionUrdu: 'صحت کے کیلکولیٹرز برائے BMI، BMR، کیلوری کی ضرورت، جسمانی چربی کا فیصد، مثالی وزن، پانی کی مقدار، حمل کی تاریخ، اور فٹنس ٹریکنگ',
     calculators: [
-      { id: 'bmi', name: 'BMI Calculator', nameUrdu: 'بی ایم آئی کیلکولیٹر', icon: HeartPulse },
+      { id: 'bmi', name: 'BMI Calculator', nameUrdu: 'BMI کیلکولیٹر', icon: HeartPulse },
+      { id: 'bmr', name: 'BMR Calculator', nameUrdu: 'BMR کیلکولیٹر', icon: HeartPulse },
       { id: 'calorie', name: 'Calorie Calculator', nameUrdu: 'کیلوری کیلکولیٹر', icon: Calculator },
-      { id: 'protein', name: 'Protein/Nutrition', nameUrdu: 'پروٹین/غذائیت', icon: HeartPulse },
-      { id: 'medicine-dosage', name: 'Medicine Dosage', nameUrdu: 'دوا کی خوراک', icon: Calculator },
+      { id: 'body-fat', name: 'Body Fat Percentage', nameUrdu: 'جسمانی چربی فیصد', icon: HeartPulse },
+      { id: 'ideal-weight', name: 'Ideal Weight', nameUrdu: 'مثالی وزن', icon: Scale },
+      { id: 'water-intake', name: 'Water Intake', nameUrdu: 'پانی کی مقدار', icon: HeartPulse },
       { id: 'pregnancy', name: 'Pregnancy Due Date', nameUrdu: 'حمل کی تاریخ', icon: Calendar },
-      { id: 'ovulation', name: 'Ovulation Calculator', nameUrdu: 'بیضہ دانی کیلکولیٹر', icon: Calendar },
-      { id: 'blood-pressure', name: 'Blood Pressure', nameUrdu: 'بلڈ پریشر', icon: HeartPulse },
-      { id: 'diabetes', name: 'Diabetes Risk', nameUrdu: 'ذیابیطس کا خطرہ', icon: HeartPulse },
-      { id: 'water-intake', name: 'Water Intake', nameUrdu: 'پانی کی مقدار', icon: Calculator },
-      { id: 'sleep', name: 'Sleep Calculator', nameUrdu: 'نیند کیلکولیٹر', icon: Clock }
+      { id: 'ovulation', name: 'Ovulation Calculator', nameUrdu: 'اووولیشن کیلکولیٹر', icon: Calendar },
+      { id: 'protein-intake', name: 'Protein Intake', nameUrdu: 'پروٹین کی مقدار', icon: HeartPulse },
+      { id: 'macro', name: 'Macro Calculator', nameUrdu: 'میکرو کیلکولیٹر', icon: Calculator }
     ]
   },
   {
-    id: 'ecommerce',
-    name: 'E-commerce & Retail',
-    nameUrdu: 'ای کامرس اور ریٹیل',
+    id: 'retail-ecommerce',
+    name: 'Retail & E-commerce',
+    nameUrdu: 'خوردہ اور ای کامرس',
     icon: ShoppingCart,
-    color: '#FFA07A',
-    gradient: 'from-orange-400 to-red-400',
-    description: 'Pricing, shipping, conversion, and ROI',
+    color: '#10B981',
+    gradient: 'from-green-600 to-emerald-600',
+    description: 'E-commerce tools for pricing strategies, profit margins, shipping costs, conversion rates, cart abandonment, sales tax, and inventory planning',
+    descriptionUrdu: 'ای کامرس ٹولز برائے قیمتوں کی حکمت عملی، منافع کے مارجن، شپنگ لاگت، تبدیلی کی شرح، کارٹ چھوڑنا، سیلز ٹیکس، اور انوینٹری کی منصوبہ بندی',
     calculators: [
-      { id: 'product-pricing', name: 'Product Pricing', nameUrdu: 'پروڈکٹ کی قیمت', icon: DollarSign },
-      { id: 'shipping', name: 'Shipping Cost', nameUrdu: 'شپنگ لاگت', icon: Car },
-      { id: 'cart-value', name: 'Cart Value', nameUrdu: 'کارٹ کی قیمت', icon: ShoppingCart },
-      { id: 'discount-calc', name: 'Discount Calculator', nameUrdu: 'ڈسکاؤنٹ کیلکولیٹر', icon: Calculator },
-      { id: 'sales-commission', name: 'Sales Commission', nameUrdu: 'فروخت کمیشن', icon: DollarSign },
-      { id: 'customer-ltv', name: 'Customer Lifetime Value', nameUrdu: 'کسٹمر لائف ٹائم ویلیو', icon: TrendingUp },
-      { id: 'conversion-rate', name: 'Conversion Rate', nameUrdu: 'کنورژن ریٹ', icon: BarChart3 },
+      { id: 'selling-price', name: 'Selling Price', nameUrdu: 'فروخت کی قیمت', icon: DollarSign },
+      { id: 'profit-margin-retail', name: 'Profit Margin', nameUrdu: 'منافع کا مارجن', icon: TrendingUp },
+      { id: 'markup', name: 'Markup Calculator', nameUrdu: 'مارک اپ کیلکولیٹر', icon: Calculator },
+      { id: 'shipping-cost', name: 'Shipping Cost', nameUrdu: 'شپنگ کی لاگت', icon: Package },
+      { id: 'conversion-rate', name: 'Conversion Rate', nameUrdu: 'تبدیلی کی شرح', icon: BarChart3 },
+      { id: 'sales-tax-retail', name: 'Sales Tax', nameUrdu: 'سیلز ٹیکس', icon: FileText },
+      { id: 'discount-profit', name: 'Discount Impact', nameUrdu: 'ڈسکاؤنٹ کا اثر', icon: Calculator },
+      { id: 'cogs', name: 'Cost of Goods Sold', nameUrdu: 'فروخت شدہ سامان کی لاگت', icon: Package },
       { id: 'average-order', name: 'Average Order Value', nameUrdu: 'اوسط آرڈر ویلیو', icon: ShoppingCart },
-      { id: 'roas', name: 'Return on Ad Spend', nameUrdu: 'اشتہار پر واپسی', icon: TrendingUp },
-      { id: 'markup-margin', name: 'Markup vs Margin', nameUrdu: 'مارک اپ بمقابلہ مارجن', icon: Calculator }
+      { id: 'customer-lifetime', name: 'Customer Lifetime Value', nameUrdu: 'کسٹمر لائف ٹائم ویلیو', icon: Users }
     ]
   },
   {
@@ -281,19 +294,19 @@ export const modulesData = [
     name: 'Agriculture & Farming',
     nameUrdu: 'زراعت اور کاشتکاری',
     icon: Sprout,
-    color: '#90EE90',
-    gradient: 'from-green-400 to-lime-500',
-    description: 'Fertilizer, crop yield, irrigation',
+    color: '#84CC16',
+    gradient: 'from-lime-600 to-green-600',
+    description: 'Farming calculators for crop yield, fertilizer requirements, irrigation costs, seed quantity, harvest planning, and agricultural profit estimation',
+    descriptionUrdu: 'کاشتکاری کے کیلکولیٹرز برائے فصل کی پیداوار، کھاد کی ضرورت، آبپاشی کی لاگت، بیج کی مقدار، فصل کی منصوبہ بندی، اور زرعی منافع کا تخمینہ',
     calculators: [
+      { id: 'crop-yield', name: 'Crop Yield', nameUrdu: 'فصل کی پیداوار', icon: Sprout },
       { id: 'fertilizer', name: 'Fertilizer Calculator', nameUrdu: 'کھاد کیلکولیٹر', icon: Sprout },
-      { id: 'crop-yield', name: 'Crop Yield Estimator', nameUrdu: 'فصل کی پیداوار', icon: TrendingUp },
-      { id: 'irrigation', name: 'Irrigation Water', nameUrdu: 'آبپاشی کا پانی', icon: Calculator },
+      { id: 'irrigation-cost', name: 'Irrigation Cost', nameUrdu: 'آبپاشی کی لاگت', icon: DollarSign },
       { id: 'seed-rate', name: 'Seed Rate', nameUrdu: 'بیج کی شرح', icon: Sprout },
-      { id: 'pesticide', name: 'Pesticide Dosage', nameUrdu: 'کیڑے مار دوا', icon: Calculator },
-      { id: 'land-productivity', name: 'Land Productivity', nameUrdu: 'زمین کی پیداواری صلاحیت', icon: TrendingUp },
-      { id: 'farm-profit', name: 'Farm Profit', nameUrdu: 'کھیت کا منافع', icon: DollarSign },
-      { id: 'livestock-feed', name: 'Livestock Feed', nameUrdu: 'مویشیوں کی خوراک', icon: Sprout },
-      { id: 'harvest-time', name: 'Harvest Time Estimator', nameUrdu: 'فصل کاٹنے کا وقت', icon: Calendar }
+      { id: 'harvest-time', name: 'Harvest Time', nameUrdu: 'فصل کا وقت', icon: Calendar },
+      { id: 'farm-profit', name: 'Farm Profit', nameUrdu: 'فارم کا منافع', icon: TrendingUp },
+      { id: 'land-lease', name: 'Land Lease', nameUrdu: 'زمین کا لیز', icon: Home },
+      { id: 'pesticide', name: 'Pesticide Calculator', nameUrdu: 'کیڑے مار دوا کیلکولیٹر', icon: Sprout }
     ]
   },
   {
@@ -301,53 +314,56 @@ export const modulesData = [
     name: 'Utilities & Bills',
     nameUrdu: 'یوٹیلیٹیز اور بل',
     icon: Zap,
-    color: '#FFD700',
-    gradient: 'from-yellow-400 to-orange-400',
-    description: 'Electricity, gas, water, internet bills',
+    color: '#FBBF24',
+    gradient: 'from-amber-500 to-yellow-500',
+    description: 'Calculate electricity bills, gas consumption, water charges, internet costs, and compare utility providers for better budget management',
+    descriptionUrdu: 'بجلی کے بل، گیس کی کھپت، پانی کے چارجز، انٹرنیٹ کی لاگت کا حساب لگائیں، اور بہتر بجٹ انتظام کے لیے یوٹیلیٹی فراہم کنندگان کا موازنہ کریں',
     calculators: [
-      { id: 'electricity', name: 'Electricity Bill', nameUrdu: 'بجلی کا بل', icon: Zap },
-      { id: 'gas', name: 'Gas Bill Estimator', nameUrdu: 'گیس بل تخمینہ', icon: Zap },
-      { id: 'water-bill', name: 'Water Bill', nameUrdu: 'پانی کا بل', icon: Calculator },
-      { id: 'internet-data', name: 'Internet Data Usage', nameUrdu: 'انٹرنیٹ ڈیٹا استعمال', icon: Globe },
-      { id: 'phone-splitter', name: 'Phone Bill Splitter', nameUrdu: 'فون بل تقسیم', icon: Calculator },
-      { id: 'unit-converter', name: 'Unit Converter', nameUrdu: 'یونٹ تبدیل کار', icon: Calculator }
+      { id: 'electricity-bill', name: 'Electricity Bill', nameUrdu: 'بجلی کا بل', icon: Zap },
+      { id: 'gas-bill', name: 'Gas Bill', nameUrdu: 'گیس کا بل', icon: Zap },
+      { id: 'water-bill', name: 'Water Bill', nameUrdu: 'پانی کا بل', icon: Zap },
+      { id: 'internet-cost', name: 'Internet Cost', nameUrdu: 'انٹرنیٹ کی لاگت', icon: Globe },
+      { id: 'solar-savings', name: 'Solar Savings', nameUrdu: 'سولر بچت', icon: Sun },
+      { id: 'energy-consumption', name: 'Energy Consumption', nameUrdu: 'توانائی کی کھپت', icon: Zap },
+      { id: 'appliance-cost', name: 'Appliance Running Cost', nameUrdu: 'آلات چلانے کی لاگت', icon: Zap }
     ]
   },
   {
-    id: 'travel',
-    name: 'Travel & Transportation',
-    nameUrdu: 'سفر اور نقل و حمل',
+    id: 'automotive',
+    name: 'Automotive & Vehicle',
+    nameUrdu: 'گاڑیاں اور وہیکل',
     icon: Car,
-    color: '#87CEEB',
-    gradient: 'from-blue-400 to-cyan-400',
-    description: 'Fuel cost, mileage, trip expenses',
+    color: '#3B82F6',
+    gradient: 'from-blue-600 to-indigo-600',
+    description: 'Vehicle calculators for fuel efficiency, car loan EMI, maintenance costs, depreciation, resale value, and total ownership cost analysis',
+    descriptionUrdu: 'گاڑی کے کیلکولیٹرز برائے ایندھن کی کارکردگی، کار لون EMI، دیکھ بھال کی لاگت، قدر میں کمی، دوبارہ فروخت کی قیمت، اور کل ملکیت کی لاگت کا تجزیہ',
     calculators: [
-      { id: 'fuel-cost', name: 'Fuel Cost', nameUrdu: 'ایندھن کی لاگت', icon: Car },
-      { id: 'trip-expense', name: 'Trip Expense', nameUrdu: 'سفر کے اخراجات', icon: DollarSign },
-      { id: 'mileage', name: 'Mileage Calculator', nameUrdu: 'مائلیج کیلکولیٹر', icon: Calculator },
-      { id: 'car-depreciation', name: 'Car Depreciation', nameUrdu: 'کار کی قدر میں کمی', icon: Car },
-      { id: 'vehicle-maintenance', name: 'Vehicle Maintenance', nameUrdu: 'گاڑی کی دیکھ بھال', icon: Car },
-      { id: 'toll-tax', name: 'Toll Tax', nameUrdu: 'ٹول ٹیکس', icon: DollarSign },
-      { id: 'flight-cost', name: 'Flight Cost Comparison', nameUrdu: 'فلائٹ لاگت موازنہ', icon: Calculator },
-      { id: 'hotel-cost', name: 'Hotel Cost Per Night', nameUrdu: 'ہوٹل کی رات کی لاگت', icon: Home },
-      { id: 'travel-budget', name: 'Travel Budget Planner', nameUrdu: 'سفر کا بجٹ', icon: DollarSign }
+      { id: 'fuel-efficiency', name: 'Fuel Efficiency', nameUrdu: 'ایندھن کی کارکردگی', icon: Car },
+      { id: 'car-loan', name: 'Car Loan EMI', nameUrdu: 'کار لون EMI', icon: Calculator },
+      { id: 'maintenance', name: 'Maintenance Cost', nameUrdu: 'دیکھ بھال کی لاگت', icon: DollarSign },
+      { id: 'car-depreciation', name: 'Car Depreciation', nameUrdu: 'کار کی قدر میں کمی', icon: TrendingDown },
+      { id: 'resale-value', name: 'Resale Value', nameUrdu: 'دوبارہ فروخت کی قیمت', icon: Car },
+      { id: 'lease-vs-buy', name: 'Lease vs Buy', nameUrdu: 'لیز بمقابلہ خریداری', icon: Car },
+      { id: 'ownership-cost', name: 'Total Ownership Cost', nameUrdu: 'کل ملکیت کی لاگت', icon: DollarSign },
+      { id: 'trip-cost', name: 'Trip Cost', nameUrdu: 'سفر کی لاگت', icon: Car }
     ]
   },
   {
-    id: 'legal',
+    id: 'legal-compliance',
     name: 'Legal & Compliance',
     nameUrdu: 'قانونی اور تعمیل',
     icon: Scale,
-    color: '#8B4513',
-    gradient: 'from-amber-600 to-orange-600',
-    description: 'Court fees, stamp duty, legal costs',
+    color: '#6366F1',
+    gradient: 'from-indigo-600 to-purple-600',
+    description: 'Legal cost estimators for court fees, lawyer charges, contract values, notary costs, registration fees, and compliance requirements',
+    descriptionUrdu: 'قانونی لاگت کا تخمینہ برائے عدالتی فیس، وکیل کے چارجز، معاہدے کی قیمتیں، نوٹری کی لاگت، رجسٹریشن فیس، اور تعمیل کی ضروریات',
     calculators: [
-      { id: 'court-fee', name: 'Court Fee', nameUrdu: 'عدالت کی فیس', icon: Scale },
-      { id: 'legal-notice', name: 'Legal Notice Cost', nameUrdu: 'قانونی نوٹس کی لاگت', icon: FileText },
-      { id: 'stamp-duty', name: 'Stamp Duty', nameUrdu: 'اسٹیمپ ڈیوٹی', icon: FileText },
-      { id: 'registration', name: 'Registration Charges', nameUrdu: 'رجسٹریشن چارجز', icon: FileText },
-      { id: 'notary', name: 'Notary Fee', nameUrdu: 'نوٹری فیس', icon: DollarSign },
-      { id: 'fine-penalty', name: 'Fine & Penalty', nameUrdu: 'جرمانہ اور سزا', icon: Calculator }
+      { id: 'court-fee', name: 'Court Fee', nameUrdu: 'عدالتی فیس', icon: Scale },
+      { id: 'lawyer-fee', name: 'Lawyer Fee', nameUrdu: 'وکیل کی فیس', icon: DollarSign },
+      { id: 'contract-value', name: 'Contract Value', nameUrdu: 'معاہدے کی قیمت', icon: FileText },
+      { id: 'notary-cost', name: 'Notary Cost', nameUrdu: 'نوٹری کی لاگت', icon: FileText },
+      { id: 'registration-fee', name: 'Registration Fee', nameUrdu: 'رجسٹریشن فیس', icon: FileText },
+      { id: 'legal-notice', name: 'Legal Notice Cost', nameUrdu: 'قانونی نوٹس کی لاگت', icon: FileText }
     ]
   },
   {
@@ -355,18 +371,19 @@ export const modulesData = [
     name: 'Marketing & Advertising',
     nameUrdu: 'مارکیٹنگ اور اشتہارات',
     icon: Megaphone,
-    color: '#FF1493',
-    gradient: 'from-pink-600 to-purple-600',
-    description: 'CPC, CPA, ROI, engagement metrics',
+    color: '#EC4899',
+    gradient: 'from-pink-600 to-rose-600',
+    description: 'Marketing ROI calculators, ad spend optimization, customer acquisition cost, campaign budget planning, and conversion tracking tools',
+    descriptionUrdu: 'مارکیٹنگ ROI کیلکولیٹرز، اشتہاری خرچ کی اصلاح، کسٹمر حاصل کرنے کی لاگت، مہم کے بجٹ کی منصوبہ بندی، اور تبدیلی کی ٹریکنگ ٹولز',
     calculators: [
-      { id: 'cpc', name: 'Cost Per Click', nameUrdu: 'کلک کی لاگت', icon: Calculator },
-      { id: 'cpa', name: 'Cost Per Acquisition', nameUrdu: 'حصول کی لاگت', icon: DollarSign },
-      { id: 'email-roi', name: 'Email Campaign ROI', nameUrdu: 'ای میل مہم آر او آئی', icon: TrendingUp },
-      { id: 'engagement', name: 'Social Media Engagement', nameUrdu: 'سوشل میڈیا مشغولیت', icon: BarChart3 },
-      { id: 'influencer-rate', name: 'Influencer Rate', nameUrdu: 'انفلوئنسر ریٹ', icon: DollarSign },
-      { id: 'ad-budget', name: 'Ad Budget Allocator', nameUrdu: 'اشتہار بجٹ', icon: Calculator },
-      { id: 'landing-conversion', name: 'Landing Page Conversion', nameUrdu: 'لینڈنگ پیج کنورژن', icon: BarChart3 },
-      { id: 'marketing-roi', name: 'Marketing ROI', nameUrdu: 'مارکیٹنگ آر او آئی', icon: TrendingUp }
+      { id: 'marketing-roi', name: 'Marketing ROI', nameUrdu: 'مارکیٹنگ ROI', icon: TrendingUp },
+      { id: 'cac', name: 'Customer Acquisition Cost', nameUrdu: 'کسٹمر حاصل کرنے کی لاگت', icon: DollarSign },
+      { id: 'ad-spend', name: 'Ad Spend Calculator', nameUrdu: 'اشتہاری خرچ کیلکولیٹر', icon: Megaphone },
+      { id: 'ctr', name: 'Click-Through Rate', nameUrdu: 'کلک تھرو ریٹ', icon: BarChart3 },
+      { id: 'cpm', name: 'CPM Calculator', nameUrdu: 'CPM کیلکولیٹر', icon: Calculator },
+      { id: 'social-media-roi', name: 'Social Media ROI', nameUrdu: 'سوشل میڈیا ROI', icon: TrendingUp },
+      { id: 'email-roi', name: 'Email Marketing ROI', nameUrdu: 'ای میل مارکیٹنگ ROI', icon: FileText },
+      { id: 'influencer-cost', name: 'Influencer Marketing Cost', nameUrdu: 'انفلوئنسر مارکیٹنگ لاگت', icon: Users }
     ]
   },
   {
@@ -374,36 +391,38 @@ export const modulesData = [
     name: 'Manufacturing & Production',
     nameUrdu: 'مینوفیکچرنگ اور پیداوار',
     icon: Factory,
-    color: '#708090',
-    gradient: 'from-slate-500 to-gray-600',
-    description: 'Production costs, quality control, capacity',
+    color: '#64748B',
+    gradient: 'from-slate-600 to-gray-600',
+    description: 'Production cost calculators, material requirements planning, machine efficiency, cycle time, labor productivity, and manufacturing overhead analysis',
+    descriptionUrdu: 'پیداوار کی لاگت کیلکولیٹرز، مواد کی ضروریات کی منصوبہ بندی، مشین کی کارکردگی، سائیکل ٹائم، مزدوری کی پیداواریت، اور مینوفیکچرنگ اوور ہیڈ کا تجزیہ',
     calculators: [
-      { id: 'production-cost', name: 'Production Cost Per Unit', nameUrdu: 'یونٹ کی پیداواری لاگت', icon: Calculator },
-      { id: 'batch-size', name: 'Batch Size', nameUrdu: 'بیچ سائز', icon: Package },
-      { id: 'downtime-cost', name: 'Machine Downtime Cost', nameUrdu: 'مشین بند ہونے کی لاگت', icon: Factory },
-      { id: 'quality-control', name: 'Quality Control', nameUrdu: 'معیار کنٹرول', icon: BarChart3 },
-      { id: 'production-capacity', name: 'Production Capacity', nameUrdu: 'پیداواری صلاحیت', icon: TrendingUp },
-      { id: 'lead-time', name: 'Lead Time', nameUrdu: 'لیڈ ٹائم', icon: Clock },
-      { id: 'bom-cost', name: 'Bill of Materials Cost', nameUrdu: 'مواد کی فہرست لاگت', icon: FileText },
-      { id: 'scrap-waste', name: 'Scrap & Waste', nameUrdu: 'کباڑ اور فضلہ', icon: Package }
+      { id: 'production-cost', name: 'Production Cost', nameUrdu: 'پیداوار کی لاگت', icon: Factory },
+      { id: 'material-requirement', name: 'Material Requirement', nameUrdu: 'مواد کی ضرورت', icon: Package },
+      { id: 'machine-efficiency', name: 'Machine Efficiency', nameUrdu: 'مشین کی کارکردگی', icon: Factory },
+      { id: 'cycle-time', name: 'Cycle Time', nameUrdu: 'سائیکل ٹائم', icon: Clock },
+      { id: 'labor-productivity', name: 'Labor Productivity', nameUrdu: 'مزدوری کی پیداواریت', icon: Users },
+      { id: 'overhead-cost', name: 'Manufacturing Overhead', nameUrdu: 'مینوفیکچرنگ اوور ہیڈ', icon: DollarSign },
+      { id: 'breakage-cost', name: 'Breakage Cost', nameUrdu: 'ٹوٹ پھوٹ کی لاگت', icon: Calculator },
+      { id: 'oee', name: 'Overall Equipment Effectiveness', nameUrdu: 'مجموعی آلات کی تاثیر', icon: BarChart3 }
     ]
   },
   {
-    id: 'energy',
-    name: 'Energy & Power',
-    nameUrdu: 'توانائی اور بجلی',
+    id: 'energy-solar',
+    name: 'Energy & Solar',
+    nameUrdu: 'توانائی اور سولر',
     icon: Sun,
-    color: '#FFA500',
-    gradient: 'from-orange-500 to-yellow-500',
-    description: 'Solar, battery, generator, consumption',
+    color: '#F59E0B',
+    gradient: 'from-amber-600 to-orange-600',
+    description: 'Solar panel calculations, energy savings, ROI on solar systems, battery backup sizing, net metering benefits, and renewable energy planning',
+    descriptionUrdu: 'سولر پینل کے حساب، توانائی کی بچت، سولر سسٹمز پر ROI، بیٹری بیک اپ کا سائز، نیٹ میٹرنگ فوائد، اور قابل تجدید توانائی کی منصوبہ بندی',
     calculators: [
-      { id: 'solar-panel', name: 'Solar Panel', nameUrdu: 'سولر پینل', icon: Sun },
-      { id: 'battery-backup', name: 'Battery Backup Time', nameUrdu: 'بیٹری بیک اپ', icon: Zap },
-      { id: 'generator-fuel', name: 'Generator Fuel Consumption', nameUrdu: 'جنریٹر ایندھن', icon: Zap },
-      { id: 'ups-runtime', name: 'UPS Runtime', nameUrdu: 'یو پی ایس رن ٹائم', icon: Zap },
-      { id: 'power-consumption', name: 'Power Consumption', nameUrdu: 'بجلی کی کھپت', icon: Zap },
+      { id: 'solar-panel', name: 'Solar Panel Size', nameUrdu: 'سولر پینل سائز', icon: Sun },
+      { id: 'solar-roi', name: 'Solar ROI', nameUrdu: 'سولر ROI', icon: TrendingUp },
+      { id: 'battery-backup', name: 'Battery Backup', nameUrdu: 'بیٹری بیک اپ', icon: Zap },
       { id: 'energy-savings', name: 'Energy Savings', nameUrdu: 'توانائی کی بچت', icon: DollarSign },
-      { id: 'carbon-footprint', name: 'Carbon Footprint', nameUrdu: 'کاربن فٹ پرنٹ', icon: Sun }
+      { id: 'net-metering', name: 'Net Metering', nameUrdu: 'نیٹ میٹرنگ', icon: Calculator },
+      { id: 'solar-payback', name: 'Solar Payback Period', nameUrdu: 'سولر واپسی کی مدت', icon: Calendar },
+      { id: 'inverter-size', name: 'Inverter Size', nameUrdu: 'انورٹر سائز', icon: Zap }
     ]
   },
   {
@@ -411,17 +430,14 @@ export const modulesData = [
     name: 'Statistics & Data Analysis',
     nameUrdu: 'شماریات اور ڈیٹا تجزیہ',
     icon: BarChart3,
-    color: '#4169E1',
-    gradient: 'from-blue-600 to-indigo-600',
-    description: 'Mean, median, standard deviation, probability',
+    color: '#14B8A6',
+    gradient: 'from-teal-600 to-cyan-600',
+    description: 'Statistical calculators for mean, median, mode, standard deviation, probability, correlation, regression analysis, and hypothesis testing',
+    descriptionUrdu: 'شماریاتی کیلکولیٹرز برائے اوسط، میڈین، موڈ، معیاری انحراف، امکان، باہمی تعلق، ریگریشن تجزیہ، اور مفروضے کی جانچ',
     calculators: [
       { id: 'mean-median', name: 'Mean, Median, Mode', nameUrdu: 'اوسط، میڈین، موڈ', icon: BarChart3 },
-      { id: 'std-deviation', name: 'Standard Deviation', nameUrdu: 'معیاری انحراف', icon: Calculator },
-      { id: 'variance', name: 'Variance Calculator', nameUrdu: 'ویرینس کیلکولیٹر', icon: BarChart3 },
-      { id: 'percentage-calc', name: 'Percentage Calculator', nameUrdu: 'فیصد کیلکولیٹر', icon: Calculator },
-      { id: 'ratio', name: 'Ratio & Proportion', nameUrdu: 'تناسب اور نسبت', icon: Calculator },
+      { id: 'standard-deviation', name: 'Standard Deviation', nameUrdu: 'معیاری انحراف', icon: Calculator },
       { id: 'probability', name: 'Probability', nameUrdu: 'امکان', icon: BarChart3 },
-      { id: 'sample-size', name: 'Sample Size', nameUrdu: 'نمونہ سائز', icon: Calculator },
       { id: 'correlation', name: 'Correlation', nameUrdu: 'باہمی تعلق', icon: TrendingUp },
       { id: 'regression', name: 'Regression Analysis', nameUrdu: 'ریگریشن تجزیہ', icon: BarChart3 },
       { id: 'z-score', name: 'Z-Score', nameUrdu: 'زیڈ سکور', icon: Calculator }
@@ -434,7 +450,8 @@ export const modulesData = [
     icon: Clock,
     color: '#20B2AA',
     gradient: 'from-teal-500 to-cyan-500',
-    description: 'Age, date difference, working days',
+    description: 'Age calculators, date difference, working days counter, time zone conversions, project deadlines, and business hours tracking',
+    descriptionUrdu: 'عمر کیلکولیٹرز، تاریخ کا فرق، کام کے دنوں کی گنتی، ٹائم زون تبدیلیاں، منصوبے کی آخری تاریخ، اور کاروباری اوقات کی نگرانی',
     calculators: [
       { id: 'age', name: 'Age Calculator', nameUrdu: 'عمر کیلکولیٹر', icon: Calendar },
       { id: 'date-difference', name: 'Date Difference', nameUrdu: 'تاریخ کا فرق', icon: Calendar },
@@ -453,7 +470,8 @@ export const modulesData = [
     icon: Beaker,
     color: '#9370DB',
     gradient: 'from-purple-600 to-violet-600',
-    description: 'Unit conversion, chemistry, physics formulas',
+    description: 'Scientific calculators for unit conversions, chemical equations, pH calculations, molarity, dilution, gas laws, physics formulas, and laboratory measurements',
+    descriptionUrdu: 'سائنسی کیلکولیٹرز برائے یونٹ تبدیلیاں، کیمیائی مساوات، pH حساب، مولریٹی، تخفیف، گیس قوانین، طبیعیات کے فارمولے، اور لیبارٹری کی پیمائش',
     calculators: [
       { id: 'unit-converter-sci', name: 'Unit Converter', nameUrdu: 'یونٹ تبدیل کار', icon: Calculator },
       { id: 'chemical-equation', name: 'Chemical Equation Balancer', nameUrdu: 'کیمیائی مساوات', icon: Beaker },
@@ -472,7 +490,8 @@ export const modulesData = [
     icon: Gamepad2,
     color: '#FF4500',
     gradient: 'from-red-600 to-orange-600',
-    description: 'Tournament brackets, prize pool, odds',
+    description: 'Gaming calculators for tournament brackets, prize pool distribution, game scores, odds calculations, and betting analysis tools',
+    descriptionUrdu: 'گیمنگ کیلکولیٹرز برائے ٹورنامنٹ بریکٹس، انعامی پول کی تقسیم، گیم سکورز، مشکلات کے حساب، اور بیٹنگ تجزیہ ٹولز',
     calculators: [
       { id: 'tournament', name: 'Tournament Bracket Generator', nameUrdu: 'ٹورنامنٹ بریکٹ', icon: Gamepad2 },
       { id: 'prize-pool', name: 'Prize Pool Distributor', nameUrdu: 'انعامی پول تقسیم', icon: DollarSign },
@@ -488,7 +507,8 @@ export const modulesData = [
     icon: Wallet,
     color: '#32CD32',
     gradient: 'from-green-600 to-lime-600',
-    description: 'Budget, expense tracker, net worth',
+    description: 'Personal money management tools for budget planning, expense tracking, bill splitting, tip calculations, debt payoff, emergency funds, and net worth analysis',
+    descriptionUrdu: 'ذاتی پیسے کے انتظام کے ٹولز برائے بجٹ پلاننگ، اخراجات کی ٹریکنگ، بل کی تقسیم، ٹپ کے حساب، قرض کی ادائیگی، ایمرجنسی فنڈز، اور خالص مالیت کا تجزیہ',
     calculators: [
       { id: 'budget-planner', name: 'Budget Planner', nameUrdu: 'بجٹ پلانر', icon: Wallet },
       { id: 'expense-tracker', name: 'Expense Tracker', nameUrdu: 'اخراجات ٹریکر', icon: DollarSign },
@@ -507,7 +527,8 @@ export const modulesData = [
     icon: Landmark,
     color: '#4682B4',
     gradient: 'from-blue-700 to-indigo-700',
-    description: 'Pension, passport, vehicle registration',
+    description: 'Government service calculators for pension planning, social security benefits, vehicle registration fees, passport costs, CNIC renewal, and utility connection charges',
+    descriptionUrdu: 'حکومتی سروس کیلکولیٹرز برائے پنشن کی منصوبہ بندی، سماجی تحفظ کے فوائد، گاڑی کی رجسٹریشن فیس، پاسپورٹ کی لاگت، شناختی کارڈ کی تجدید، اور یوٹیلیٹی کنکشن چارجز',
     calculators: [
       { id: 'pension', name: 'Pension Calculator', nameUrdu: 'پنشن کیلکولیٹر', icon: DollarSign },
       { id: 'social-security', name: 'Social Security Benefits', nameUrdu: 'سماجی تحفظ', icon: Shield },
@@ -524,7 +545,8 @@ export const modulesData = [
     icon: Users,
     color: '#FF6347',
     gradient: 'from-red-500 to-pink-500',
-    description: 'Hourly rate, quotes, invoices, tax',
+    description: 'Freelancer tools for hourly rate calculations, project quotes, invoice generation, tax planning, time tracking, and client profitability analysis',
+    descriptionUrdu: 'فری لانسر ٹولز برائے گھنٹے کی شرح کے حساب، پروجیکٹ کوٹس، انوائس جنریشن، ٹیکس پلاننگ، وقت کی ٹریکنگ، اور کلائنٹ منافع کا تجزیہ',
     calculators: [
       { id: 'hourly-rate', name: 'Hourly Rate', nameUrdu: 'گھنٹے کی شرح', icon: Clock },
       { id: 'project-quote', name: 'Project Quote Generator', nameUrdu: 'پروجیکٹ کوٹ', icon: FileText },
@@ -541,7 +563,8 @@ export const modulesData = [
     icon: Gift,
     color: '#00CED1',
     gradient: 'from-cyan-600 to-blue-600',
-    description: 'Zakat, Nisab, Sadaqah, Fitrana',
+    description: 'Islamic charity calculators for Zakat calculations, Nisab thresholds, Sadaqah planning, Fitrana amounts, and donation management for Muslim community',
+    descriptionUrdu: 'اسلامی خیرات کیلکولیٹرز برائے زکوٰۃ کے حساب، نصاب کی حدیں، صدقہ کی منصوبہ بندی، فطرانہ کی رقمیں، اور مسلم کمیونٹی کے لیے عطیات کا انتظام',
     calculators: [
       { id: 'zakat', name: 'Zakat Calculator', nameUrdu: 'زکوٰۃ کیلکولیٹر', icon: Gift },
       { id: 'nisab', name: 'Nisab Calculator', nameUrdu: 'نصاب کیلکولیٹر', icon: DollarSign },
@@ -557,7 +580,8 @@ export const modulesData = [
     icon: Globe,
     color: '#DA70D6',
     gradient: 'from-purple-500 to-pink-500',
-    description: 'Daily life calculators and converters',
+    description: 'Everyday utility calculators including age in days, cooking measurements, recipe scaling, clothing sizes, random numbers, percentages, ratios, and fractions',
+    descriptionUrdu: 'روزمرہ یوٹیلیٹی کیلکولیٹرز بشمول دنوں میں عمر، کھانا پکانے کی پیمائش، ریسیپی سکیلنگ، کپڑوں کے سائز، بے ترتیب نمبر، فیصد، تناسب، اور کسر',
     calculators: [
       { id: 'age-detailed', name: 'Age in Days/Hours/Minutes', nameUrdu: 'عمر تفصیل سے', icon: Clock },
       { id: 'cooking-converter', name: 'Cooking Measurement Converter', nameUrdu: 'کھانا پکانے کی پیمائش', icon: Calculator },
@@ -571,6 +595,6 @@ export const modulesData = [
       { id: 'roman-numeral', name: 'Roman Numeral Converter', nameUrdu: 'رومن ہندسے', icon: Calculator }
     ]
   }
-];
+  ];
 
 export default modulesData;
