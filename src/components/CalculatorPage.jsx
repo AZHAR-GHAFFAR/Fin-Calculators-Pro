@@ -102,6 +102,9 @@ import ClosingCostsCalculator from '../../src/calculators/realEstateCalculators/
 import BMICalculator from '../calculators/BMICalculator';
 import GPACalculator from '../calculators/GPACalculator';
 
+// SCIENTIFIC CALCULATOR
+import ScientificCalculatorHub from '../components/ScientificCalculatorHub';
+
 const calculatorComponents = {
  // Financial Calculators
   'loan': LoanCalculator,
@@ -205,11 +208,40 @@ const calculatorComponents = {
   
   // Education  
   'gpa': GPACalculator,
+
+  // SCIENTIFIC CALCULATOR
+  'scientific': ScientificCalculatorHub,
+
 };
 
-const CalculatorPage = ({ modules, language, addToHistory, calculationHistory }) => {
+const CalculatorPage = ({ modules, language, addToHistory, calculationHistory, darkMode }) => {
   const { moduleId, calculatorId } = useParams();
   const navigate = useNavigate();
+
+  // HANDLING FOR SCIENTIFIC CALCULATOR
+if (!moduleId && !calculatorId) {
+  const path = window.location.hash.replace('#', '');
+  if (path === '/scientific-calculator') {
+    return (
+      <div className="space-y-6 animate-fade-in">
+        <div className="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
+          <span className="cursor-pointer hover:text-indigo-600 dark:hover:text-indigo-400" onClick={() => navigate('/')}>
+            {language === 'en' ? 'Home' : 'ہوم'}
+          </span>
+          <ChevronRight className="w-4 h-4" />
+          <span className="font-semibold text-slate-800 dark:text-white">
+            {language === 'en' ? 'Scientific Calculator' : 'سائنسی کیلکولیٹر'}
+          </span>
+        </div>
+
+        <ScientificCalculatorHub
+          language={language}
+          darkMode={darkMode}
+        />
+      </div>
+    );
+  }
+}
 
   const module = modules.find(m => m.id === moduleId);
   const calculator = module?.calculators.find(c => c.id === calculatorId);
@@ -264,6 +296,7 @@ const CalculatorPage = ({ modules, language, addToHistory, calculationHistory })
           addToHistory={addToHistory}
           calculatorName={language === 'en' ? calculator.name : calculator.nameUrdu}
           moduleColor={module.color}
+          darkMode={darkMode}
         />
       ) : (
         <div className="bg-white dark:bg-slate-800 rounded-2xl p-12 text-center shadow-lg border border-slate-100 dark:border-slate-700">

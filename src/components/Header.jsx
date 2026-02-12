@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Calculator, Moon, Sun, Globe, Menu, X } from 'lucide-react';
+import { Calculator, Moon, Sun, Globe, Menu, X, Sigma } from 'lucide-react';
 
 const Header = ({ language, setLanguage, darkMode, setDarkMode }) => {
   const navigate = useNavigate();
@@ -31,6 +31,16 @@ const Header = ({ language, setLanguage, darkMode, setDarkMode }) => {
 
           {/* Desktop Actions */}
           <div className="hidden md:flex items-center space-x-4">
+
+              {/* Scientific Calculator Button - NEW */}
+            <button
+              onClick={() => navigate('/scientific-calculator')}
+              className="flex items-center gap-2 px-4 py-2 text-sm font-semibold bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white rounded-lg shadow-md hover:shadow-lg transition-all duration-200 transform hover:-translate-y-0.5"
+            >
+              <Sigma className="w-4 h-4" />
+              {language === 'en' ? 'Scientific Calculator' : 'سائنسی کیلکولیٹر'}
+            </button>
+
             {/* Language Toggle */}
             <button
               onClick={() => setLanguage(language === 'en' ? 'ur' : 'en')}
@@ -75,6 +85,16 @@ const Header = ({ language, setLanguage, darkMode, setDarkMode }) => {
         {/* Mobile Menu */}
         {mobileMenuOpen && (
           <div className="md:hidden mt-4 pt-4 border-t border-slate-200 dark:border-slate-700 space-y-2 animate-slide-down">
+
+            {/* Scientific Calculator Button - Mobile */}
+            <button
+            onClick={() => navigate('/scientific-calculator')}
+            className="flex items-center gap-2 px-4 py-2 text-sm font-semibold bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white rounded-lg shadow-md hover:shadow-lg transition-all duration-200 transform hover:-translate-y-0.5"
+          >
+            <Sigma className="w-4 h-4" />
+            {language === 'en' ? 'Scientific Calculator' : 'سائنسی کیلکولیٹر'}
+          </button>
+
             <button
               onClick={() => {
                 setLanguage(language === 'en' ? 'ur' : 'en');

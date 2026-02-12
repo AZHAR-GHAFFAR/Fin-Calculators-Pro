@@ -71,6 +71,7 @@ return (
 
           <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
             <Routes>
+              {/* Home Page */}
               <Route 
                 path="/" 
                 element={
@@ -81,6 +82,8 @@ return (
                   />
                 } 
               />
+
+              {/* Module Page */}
               <Route 
                 path="/module/:moduleId" 
                 element={
@@ -90,6 +93,8 @@ return (
                   />
                 } 
               />
+
+              {/* Calculator Page (with module and calculator ID) */}
               <Route 
                 path="/calculator/:moduleId/:calculatorId" 
                 element={
@@ -98,9 +103,26 @@ return (
                     language={language}
                     addToHistory={addToHistory}
                     calculationHistory={calculationHistory}
+                    darkMode={darkMode}
                   />
                 } 
               />
+
+              {/* Scientific Calculator */}
+              <Route 
+                path="/scientific-calculator" 
+                element={
+                  <CalculatorPage 
+                    modules={modulesData}
+                    language={language}
+                    addToHistory={addToHistory}
+                    calculationHistory={calculationHistory}
+                    darkMode={darkMode}
+                  />
+                } 
+              />
+
+              {/* Other Pages */}
               <Route 
                 path="/about" 
                 element={<AboutUs language={language} />} 
