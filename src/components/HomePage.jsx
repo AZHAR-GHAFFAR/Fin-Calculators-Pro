@@ -1,7 +1,7 @@
 
 import React, { useRef, useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { TrendingUp, FileText, DollarSign, Calculator, ChevronRight, History, Sparkles, ArrowDown, X, Cookie, Shield, Bell, Check, Lock, Zap, Users, Award, Globe } from 'lucide-react';
+import { TrendingUp, FileText, DollarSign, Calculator, ChevronRight, History, Sparkles, ArrowDown, X, Cookie, Shield, Bell, Check, Lock, Zap, Users, Award, Globe, Star, Quote, MessageSquare, CheckCircle } from 'lucide-react';
 import DemoVideo from '../assests/FinCalc Pro.mp4';
 import WriteReviewModal from '../components/WriteReviewModal'; 
 
@@ -653,17 +653,36 @@ will-change-transform cursor-pointer"
         </div>
       </div>
 
-      {/* PROFESSIONAL TESTIMONIALS SECTION - REDESIGNED */}
-      <div className="relative overflow-hidden rounded-3xl">
-        {/* Background Decoration */}
+      {/* PROFESSIONAL TESTIMONIALS SECTION*/}
+<section className="relative bg-gradient-to-b from-slate-50 to-white dark:from-slate-900/50 dark:to-slate-800/50 overflow-hidden rounded-3xl">
+
+      {/* ❄️ SUBTLE SNOW PARTICLES */}
+<div className="absolute inset-0 pointer-events-none z-20 opacity-60">
+  {[...Array(60)].map((_, i) => (
+    <div
+      key={i}
+      className="absolute w-1 h-1 bg-white dark:bg-blue-100 rounded-full animate-snow-particle"
+      style={{
+        left: `${Math.random() * 100}%`,
+        top: `-${Math.random() * 50}px`,
+        animationDelay: `${Math.random() * 10}s`,
+        animationDuration: `${8 + Math.random() * 12}s`,
+        filter: 'blur(1px)'
+      }}
+    />
+  ))}
+</div>
+
+       {/* Background Decoration */}
         <div className="absolute inset-0 bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 dark:from-indigo-950/10 dark:via-purple-950/10 dark:to-pink-950/10 rounded-3xl"></div>
         <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-indigo-400/10 to-purple-400/10 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-pink-400/10 to-purple-400/10 rounded-full blur-3xl"></div>
-        
-        <div className="relative bg-white dark:bg-slate-800 rounded-3xl p-8 md:p-12 shadow-2xl border border-slate-200 dark:border-slate-700">
-          {/* Section Header */}
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-indigo-100 to-purple-100 dark:from-indigo-900/30 dark:to-purple-900/30 px-4 py-2 rounded-full mb-4">
+
+   <div className="relative bg-white dark:bg-slate-800 rounded-3xl p-8 md:p-12 shadow-2xl border border-slate-200 dark:border-slate-700">
+    {/* Section Header */}
+    <div className="text-center mb-12">
+      
+       <div className="inline-flex items-center gap-2 bg-gradient-to-r from-indigo-100 to-purple-100 dark:from-indigo-900/30 dark:to-purple-900/30 px-4 py-2 rounded-full mb-4">
               <svg className="w-5 h-5 text-indigo-600 dark:text-indigo-400" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z"/>
               </svg>
@@ -684,160 +703,177 @@ will-change-transform cursor-pointer"
                 : 'ہزاروں مطمئن صارفین میں شامل ہوں جو اپنی مالیاتی منصوبہ بندی کے لیے FinCalc Pro پر اعتماد کرتے ہیں'
               }
             </p>
-            
-            {/* Trust Indicators */}
-            <div className="flex flex-wrap items-center justify-center gap-6 mt-6">
-              <div className="flex items-center gap-2">
-                <div className="flex">
-                  {[...Array(5)].map((_, i) => (
-                    <svg key={i} className="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                  ))}
+
+
+    {/* Trust Indicators */}
+    <div className="flex justify-center items-center gap-8 mb-12 flex-wrap">
+      <div className="flex items-center gap-2">
+        <div className="flex">
+          {[...Array(5)].map((_, i) => (
+            <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+          ))}
+        </div>
+        <span className="text-slate-700 dark:text-slate-300 font-semibold">
+          4.9/5 {language === 'en' ? 'Rating' : 'ریٹنگ'}
+        </span>
+      </div>
+      <div className="flex items-center gap-2 text-slate-700 dark:text-slate-300 font-semibold">
+        <CheckCircle className="w-5 h-5 text-green-500" />
+        {language === 'en' ? '50,000+ Happy Users' : '50,000+ خوش صارفین'}
+      </div>
+    </div>
+
+    {/* HORIZONTAL SCROLLING CONTAINER */}
+    <div className="relative mb-12">
+      {/* Gradient Fade Overlays */}
+      <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-white dark:from-slate-800 to-transparent z-10 pointer-events-none"></div>
+      <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-white dark:from-slate-800 to-transparent z-10 pointer-events-none"></div>
+
+      {/* Scrolling Track */}
+      <div className="overflow-hidden">
+        <div 
+          className="flex gap-6 animate-scroll-testimonials"
+          style={{ width: 'max-content' }}
+        >
+          {[
+            {
+              name: language === 'en' ? 'Ahmed Khan' : 'احمد خان',
+              role: language === 'en' ? 'Business Owner' : 'کاروباری',
+              location: language === 'en' ? 'Karachi' : 'کراچی',
+              text: language === 'en' 
+                ? 'Best financial calculator I\'ve used. Helped me plan my business loan perfectly. The EMI breakdown and visual charts made everything crystal clear!' 
+                : 'بہترین مالیاتی کیلکولیٹر جو میں نے استعمال کیا۔ میرے کاروباری قرض کی منصوبہ بندی میں بہت مددگار۔ EMI کی تفصیل اور بصری چارٹس نے سب کچھ بالکل واضح کر دیا!',
+              rating: 5,
+              avatar: 'A',
+              gradient: 'from-blue-500 to-cyan-500',
+              verified: true
+            },
+            {
+              name: language === 'en' ? 'Fatima Ali' : 'فاطمہ علی',
+              role: language === 'en' ? 'Real Estate Agent' : 'رئیل اسٹیٹ ایجنٹ',
+              location: language === 'en' ? 'Lahore' : 'لاہور',
+              text: language === 'en' 
+                ? 'The SIP calculator helped me start my investment journey. Highly recommended! I can now plan my retirement with confidence.' 
+                : 'SIP کیلکولیٹر نے میری سرمایہ کاری شروع کرنے میں مدد کی۔ انتہائی تجویز کردہ! اب میں اعتماد کے ساتھ اپنی ریٹائرمنٹ کی منصوبہ بندی کر سکتی ہوں۔',
+              rating: 5,
+              avatar: 'F',
+              gradient: 'from-purple-500 to-pink-500',
+              verified: true
+            },
+            {
+              name: language === 'en' ? 'Hassan Raza' : 'حسن رضا',
+              role: language === 'en' ? 'Software Engineer' : 'سافٹ ویئر انجینئر',
+              location: language === 'en' ? 'Islamabad' : 'اسلام آباد',
+              text: language === 'en' 
+                ? 'Simple, accurate, and free. Perfect for quick calculations on the go. The bilingual support makes it accessible for everyone in my family!' 
+                : 'سادہ، درست اور مفت۔ چلتے پھرتے حسابات کے لیے بہترین۔ دو لسانی سپورٹ اسے میرے خاندان کے ہر فرد کے لیے قابل رسائی بناتی ہے!',
+              rating: 5,
+              avatar: 'H',
+              gradient: 'from-green-500 to-emerald-500',
+              verified: true
+            },
+            {
+              name: language === 'en' ? 'Sara Malik' : 'سارہ ملک',
+              role: language === 'en' ? 'Teacher' : 'استانی',
+              location: language === 'en' ? 'Faisalabad' : 'فیصل آباد',
+              text: language === 'en' 
+                ? 'Amazing tool for financial planning. The Urdu support makes it easy for my parents to use too!' 
+                : 'مالیاتی منصوبہ بندی کے لیے شاندار ٹول۔ اردو سپورٹ میرے والدین کے لیے بھی استعمال کرنا آسان بناتی ہے!',
+              rating: 5,
+              avatar: 'S',
+              gradient: 'from-orange-500 to-red-500',
+              verified: true
+            },
+            {
+              name: language === 'en' ? 'Ali Haider' : 'علی حیدر',
+              role: language === 'en' ? 'Entrepreneur' : 'کاروباری',
+              location: language === 'en' ? 'Multan' : 'ملتان',
+              text: language === 'en' 
+                ? 'The loan calculator saved me thousands! Clear breakdown of interest and principal amounts.' 
+                : 'قرض کیلکولیٹر نے مجھے ہزاروں بچایے! سود اور اصل رقم کی واضح تفصیل۔',
+              rating: 5,
+              avatar: 'A',
+              gradient: 'from-indigo-500 to-blue-500',
+              verified: true
+            },
+            {
+              name: language === 'en' ? 'Ayesha Noor' : 'عائشہ نور',
+              role: language === 'en' ? 'Doctor' : 'ڈاکٹر',
+              location: language === 'en' ? 'Rawalpindi' : 'راولپنڈی',
+              text: language === 'en' 
+                ? 'Perfect for planning my home loan. The charts and graphs make complex calculations easy to understand!' 
+                : 'گھر کے قرض کی منصوبہ بندی کے لیے بہترین۔ چارٹس اور گراف پیچیدہ حسابات کو سمجھنا آسان بناتے ہیں!',
+              rating: 5,
+              avatar: 'A',
+              gradient: 'from-pink-500 to-rose-500',
+              verified: true
+            }
+          ].flatMap(t => [t, t, t]).map((testimonial, idx) => (
+            <div
+              key={idx}
+              className="relative w-96 flex-shrink-0 bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-slate-100 dark:border-slate-700 hover:border-indigo-200 dark:hover:border-indigo-700 group"
+            >
+              {/* Verified Badge */}
+              {testimonial.verified && (
+                <div className="absolute top-4 right-4 flex items-center gap-1 bg-green-50 dark:bg-green-900/30 text-green-600 dark:text-green-400 px-3 py-1 rounded-full text-xs font-medium">
+                  <CheckCircle className="w-3 h-3" />
+                  {language === 'en' ? 'Verified' : 'تصدیق شدہ'}
                 </div>
-                <span className="text-sm font-semibold text-slate-700 dark:text-slate-300">
-                  4.9/5 {language === 'en' ? 'Rating' : 'ریٹنگ'}
-                </span>
+              )}
+
+              {/* Gradient Background Effect */}
+              <div className={`absolute inset-0 bg-gradient-to-br ${testimonial.gradient} opacity-0 group-hover:opacity-5 rounded-2xl transition-opacity duration-300`}></div>
+
+              {/* Quote Icon */}
+              <div className="relative mb-4">
+                <Quote className="w-10 h-10 text-indigo-200 dark:text-indigo-900/50" />
               </div>
-              <div className="h-1 w-1 bg-slate-400 rounded-full"></div>
-              <div className="flex items-center gap-2 text-sm font-semibold text-slate-700 dark:text-slate-300">
-                <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-                </svg>
-                {language === 'en' ? '50,000+ Happy Users' : '50,000+ خوش صارفین'}
+
+              {/* Rating Stars */}
+              <div className="flex gap-1 mb-4">
+                {[...Array(testimonial.rating)].map((_, i) => (
+                  <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                ))}
+              </div>
+
+              {/* Testimonial Text */}
+              <p className={`text-slate-700 dark:text-slate-300 mb-6 leading-relaxed ${language === 'ur' ? 'text-right' : ''}`}>
+                "{testimonial.text}"
+              </p>
+
+              {/* User Info */}
+              <div className="flex items-center gap-3">
+                <div className={`w-12 h-12 rounded-full bg-gradient-to-br ${testimonial.gradient} flex items-center justify-center text-white font-bold text-lg`}>
+                  {testimonial.avatar}
+                </div>
+                <div className={language === 'ur' ? 'text-right flex-1' : ''}>
+                  <h4 className="font-semibold text-slate-900 dark:text-white">{testimonial.name}</h4>
+                  <p className="text-sm text-slate-500 dark:text-slate-400">{testimonial.role}</p>
+                  <p className="text-xs text-slate-400 dark:text-slate-500">{testimonial.location}</p>
+                </div>
               </div>
             </div>
-          </div>
-
-          {/* Testimonials Grid */}
-          <div className="grid md:grid-cols-3 gap-6 md:gap-8">
-            {[
-              {
-                name: language === 'en' ? 'Ahmed Khan' : 'احمد خان',
-                role: language === 'en' ? 'Business Owner' : 'کاروباری',
-                location: language === 'en' ? 'Karachi' : 'کراچی',
-                text: language === 'en' 
-                  ? 'Best financial calculator I\'ve used. Helped me plan my business loan perfectly. The EMI breakdown and visual charts made everything crystal clear!'
-                  : 'بہترین مالیاتی کیلکولیٹر جو میں نے استعمال کیا۔ میرے کاروباری قرض کی منصوبہ بندی میں بہت مددگار۔ EMI کی تفصیل اور بصری چارٹس نے سب کچھ بالکل واضح کر دیا!',
-                rating: 5,
-                avatar: 'A',
-                gradient: 'from-blue-500 to-cyan-500',
-                verified: true
-              },
-              {
-                name: language === 'en' ? 'Fatima Ali' : 'فاطمہ علی',
-                role: language === 'en' ? 'Real Estate Agent' : 'رئیل اسٹیٹ ایجنٹ',
-                location: language === 'en' ? 'Lahore' : 'لاہور',
-                text: language === 'en'
-                  ? 'The SIP calculator helped me start my investment journey. Highly recommended! I can now plan my retirement with confidence.'
-                  : 'SIP کیلکولیٹر نے میری سرمایہ کاری شروع کرنے میں مدد کی۔ انتہائی تجویز کردہ! اب میں اعتماد کے ساتھ اپنی ریٹائرمنٹ کی منصوبہ بندی کر سکتی ہوں۔',
-                rating: 5,
-                avatar: 'F',
-                gradient: 'from-purple-500 to-pink-500',
-                verified: true
-              },
-              {
-                name: language === 'en' ? 'Hassan Raza' : 'حسن رضا',
-                role: language === 'en' ? 'Software Engineer' : 'سافٹ ویئر انجینئر',
-                location: language === 'en' ? 'Islamabad' : 'اسلام آباد',
-                text: language === 'en'
-                  ? 'Simple, accurate, and free. Perfect for quick calculations on the go. The bilingual support makes it accessible for everyone in my family!'
-                  : 'سادہ، درست اور مفت۔ چلتے پھرتے حسابات کے لیے بہترین۔ دو لسانی سپورٹ اسے میرے خاندان کے ہر فرد کے لیے قابل رسائی بناتی ہے!',
-                rating: 5,
-                avatar: 'H',
-                gradient: 'from-green-500 to-emerald-500',
-                verified: true
-              }
-            ].map((testimonial, idx) => (
-              <div 
-                key={idx} 
-                className="group relative bg-white dark:bg-slate-800 rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-slate-200 dark:border-slate-700 hover:border-transparent hover:-translate-y-2"
-                style={{ animationDelay: `${idx * 100}ms` }}
-              >
-                {/* Verified Badge */}
-                {testimonial.verified && (
-                  <div className="absolute top-4 right-4 bg-gradient-to-r from-blue-500 to-cyan-500 text-white text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1 shadow-md">
-                    <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-                    </svg>
-                    <span>{language === 'en' ? 'Verified' : 'تصدیق شدہ'}</span>
-                  </div>
-                )}
-
-                {/* Gradient Background Effect */}
-                <div className={`absolute inset-0 bg-gradient-to-br ${testimonial.gradient} opacity-0 group-hover:opacity-5 rounded-2xl transition-opacity duration-300`}></div>
-                
-                <div className="relative">
-                  {/* Quote Icon */}
-                  <div className="mb-4">
-                    <svg className="w-10 h-10 text-indigo-200 dark:text-indigo-900/50" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
-                    </svg>
-                  </div>
-
-                  {/* Rating Stars */}
-                  <div className="flex gap-1 mb-4">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <svg 
-                        key={i} 
-                        className="w-5 h-5 text-yellow-400 fill-current drop-shadow-sm" 
-                        viewBox="0 0 20 20"
-                      >
-                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                      </svg>
-                    ))}
-                  </div>
-
-                  {/* Testimonial Text */}
-                  <p className="text-slate-700 dark:text-slate-300 mb-6 leading-relaxed text-base italic">
-                    "{testimonial.text}"
-                  </p>
-
-                  {/* User Info */}
-                  <div className="flex items-center gap-4 pt-4 border-t border-slate-200 dark:border-slate-700">
-                    <div className={`w-12 h-12 bg-gradient-to-br ${testimonial.gradient} rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg ring-4 ring-white dark:ring-slate-800`}>
-                      {testimonial.avatar}
-                    </div>
-                    <div className="flex-1">
-                      <p className="font-bold text-slate-900 dark:text-white text-base">
-                        {testimonial.name}
-                      </p>
-                      <p className="text-sm text-slate-600 dark:text-slate-400">
-                        {testimonial.role}
-                      </p>
-                      <p className="text-xs text-slate-500 dark:text-slate-500 flex items-center gap-1 mt-1">
-                        <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd"/>
-                        </svg>
-                        {testimonial.location}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Bottom CTA */}
-          <div className="mt-12 text-center">
-            <p className="text-slate-600 dark:text-slate-400 mb-4">
-              {language === 'en' 
-                ? 'Want to share your experience?' 
-                : 'اپنا تجربہ شیئر کرنا چاہتے ہیں؟'
-              }
-            </p>
-           <button
-              onClick={() => setShowReviewModal(true)}
-              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200"
-            >
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/>
-              </svg>
-              {language === 'en' ? 'Write a Review' : 'ریویو لکھیں'}
-            </button>
-          </div>
+          ))}
         </div>
       </div>
+    </div>
+
+    {/* Bottom CTA */}
+    <div className="text-center bg-gradient-to-r from-indigo-50 to-purple-50 dark:from-indigo-950/30 dark:to-purple-950/30 rounded-2xl p-8 border border-indigo-100 dark:border-indigo-900/50">
+      <p className="text-lg text-slate-700 dark:text-slate-300 mb-4 font-medium">
+        {language === 'en' ? 'Want to share your experience?' : 'اپنا تجربہ شیئر کرنا چاہتے ہیں؟'}
+      </p>
+      <button
+        onClick={() => setShowReviewModal(true)}
+        className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200"
+      >
+        <MessageSquare className="w-5 h-5" />
+        {language === 'en' ? 'Write a Review' : 'ریویو لکھیں'}
+      </button>
+    </div>
+  </div>
+  </div>
+</section>
 
       {/* Review Modal */}
       <WriteReviewModal 
@@ -896,6 +932,46 @@ will-change-transform cursor-pointer"
           </button>
         </div>
       </div>
+      {/* CSS Animation for scrolling testimonials */}
+    <style jsx>{`
+      @keyframes scroll-testimonials {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-33.333333%);
+        }
+      }
+    
+      .animate-scroll-testimonials {
+        animation: scroll-testimonials 60s linear infinite;
+      }
+    
+      .animate-scroll-testimonials:hover {
+        animation-play-state: paused;
+      }
+
+      @keyframes snow-particle {
+  0% {
+    transform: translateY(-50px) translateX(0);
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) translateX(100px);
+    opacity: 0;
+  }
+}
+
+.animate-snow-particle {
+  animation: snow-particle linear infinite;
+}
+    `}</style>
     </div>
   );
 };
